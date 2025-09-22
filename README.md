@@ -1,9 +1,5 @@
 # ASCII Designer
 
-[![Python](https://img.shields.io/badge/Python-3.7%2B-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/badge/downloads-100%2B-green)](https://github.com/username/ascii-designer/releases)
-
 A powerful terminal-based ASCII art generator for creating stunning, readable banners and logos for your CLI tools, scripts, and projects. Inspired by FIGlet, but enhanced with themes, colors, and multiple font styles.
 
 <div align="center">
@@ -16,31 +12,17 @@ A powerful terminal-based ASCII art generator for creating stunning, readable ba
 - **9+ Attractive Themes**: Cyber, Retro, Minimal, Fantasy, Neon, Space, Gothic, Industrial, Banner
 - **Size Options**: Small, Medium, Large for different visibility needs
 - **ANSI Color Support**: Theme-specific colors for vibrant terminal output
-- **Random Variations**: Generate multiple design options automatically
 - **File Export**: Save designs to text files for easy integration
 - **Customizable**: Extensive command-line options for precise control
 
-## Options
-
-
-**--theme**: Choosing the theme of designing
---size TEXT,Design size,--size large
-**--font**: Selecting the font style - Choose ASCII character design
-**--variations**: Number of design variations to generate
-**--color**: Enable ANSI color output - Add theme-specific colors
-**--output**: Save designs to files - Export to text files
-**--random**: Add random decorative elements
-**-h**: Display help information
-
-## Demo
-
-   ______      __              ____                      
-  / ____/_  __/ /_  ___  _____/ __ \___  _________  ____ 
- / /   / / / / __ \/ _ \/ ___/ /_/ / _ \/ ___/ __ \/ __ \
-/ /___/ /_/ / /_/ /  __/ /  / _, _/  __/ /__/ /_/ / / / /
-\____/\__, /_.___/\___/_/  /_/ |_|\___/\___/\____/_/ /_/ 
-     /____/                                              
-
+## Options	Usage
+**--font**:	Choose the font for the ASCII design (e.g., slant, block, standard).
+**--align**:	Set alignment of the output (left, center, right).
+**--color**:	Apply color to the ASCII design (red, green, yellow, blue, magenta, cyan, white).
+**--export**:	Export the ASCII design as reusable code (python, json, or raw).
+**--theme**:	Pick a theme preset (combination of font + color).
+**--embed-color**: If exporting, embed the ANSI color codes inside the exported content
+**-h, --help**:	Show help message with all available options.
 
 # Installation:
 
@@ -64,15 +46,17 @@ pip install ascii-designer
 
 ## Simple usage with default settings
 ```
+```
+```
 python3 ascii_designer.py "YourToolName"
+```
+```
 ```
 ## With custom theme and font
 ```
 python3 ascii_designer.py "YourToolName" --font bigblock --theme banner --color
 ```
-## Multiple variations
 ```
-python3 ascii_designer.py "YourToolName" --variations 3 --random
 ```
 ## Save to file
 ```

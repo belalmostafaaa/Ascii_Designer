@@ -49,10 +49,10 @@ python3 ascii_designer.py "YourToolName"
 
 ## With custom theme and font
 ```
-python3 ascii_designer.py "YourToolName" --font bigblock --theme banner --color
+python3 ascii_designer.py "YourToolName" --font bigblock --color green
 ```
 
 ## Save to file
 ```
-python3 ascii_designer.py "YourToolName" --output design --variations 2
+python3 ascii_designer.py "YourToolName" --output design
 ```

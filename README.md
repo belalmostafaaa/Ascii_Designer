@@ -43,18 +43,15 @@ pip install ascii-designer
 
 ## Simple usage with default settings
 ```
-```
-```
+
 python3 ascii_designer.py "YourToolName"
 ```
-```
-```
+
 ## With custom theme and font
 ```
 python3 ascii_designer.py "YourToolName" --font bigblock --theme banner --color
 ```
-```
-```
+
 ## Save to file
 ```
 python3 ascii_designer.py "YourToolName" --output design --variations 2

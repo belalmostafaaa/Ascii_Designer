@@ -2,9 +2,6 @@
 
 A powerful terminal-based ASCII art generator for creating stunning, readable banners and logos for your CLI tools, scripts, and projects. Inspired by FIGlet, but enhanced with themes, colors, and multiple font styles.
 
-<div align="center">
-  <img src="https://via.placeholder.com/800x200/0066cc/ffffff?text=ASCII+Designer" alt="ASCII Designer Banner">
-</div>
 
 ## Features
 

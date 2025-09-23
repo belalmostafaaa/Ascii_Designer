@@ -1,0 +1,31 @@
+# fly.toml file for ASCII Designer Tool
+app = "ascii-designer"
+
+primary_region = "lhr"   # or your nearest Fly region (e.g. fra, iad, sin)
+
+[build]
+  # Fly will detect Python via requirements.txt, no need to specify builder
+  builder = "paketobuildpacks/builder:base"
+
+[env]
+  PORT = "8080"          # must match the port used in app.py
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 8080
+  processes = ["app"]
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
